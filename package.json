@@ -1,0 +1,41 @@
+{
+  "name": "nodeclusters",
+  "version": "1.0.0",
+  "description": "Node.js Clusters demonstration for implementing Vertical scaling",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "start-local": "nodemon ./dist/index.js",
+    "start-dev": "cross-env NODE_ENV=development nodemon ./dist/index.js",
+    "start-qa": "cross-env NODE_ENV=qa nodemon ./dist/index.js",
+    "start-prod": "cross-env NODE_ENV=production nodemon ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NebyuCodes/nodeclusters.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Clusters",
+    "Vertical",
+    "Scaling"
+  ],
+  "author": "Nebyu Samuel, Friday Night Coding with Neba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NebyuCodes/nodeclusters/issues"
+  },
+  "homepage": "https://github.com/NebyuCodes/nodeclusters#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.2",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "typescript": "^5.6.3"
+  }
+}
